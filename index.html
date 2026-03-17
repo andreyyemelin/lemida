@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מערכת למידה מרחוק - 16.03</title>
+    <title>מערכת למידה מרחוק - 17.03</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -15,6 +15,7 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         .gradient-bg {
+            background: linear-gradient(135deg, #f687b3 0%, #d53f8c(100%));
             background: linear-gradient(135deg, #f687b3 0%, #d53f8c 100%);
         }
         #login-overlay {
@@ -63,94 +64,63 @@
     <!-- Main Content -->
     <div id="main-content" class="max-w-4xl mx-auto hidden-content text-right">
         
-        <!-- באנר סיום למידה -->
-        <div class="bg-red-600 text-white text-center py-4 px-6 rounded-2xl mb-8 shadow-2xl animate-pulse border-4 border-red-300">
-            <h2 class="text-2xl md:text-4xl font-black flex items-center justify-center gap-3">
-                <span>🏁</span> הלמידה נגמרה להיום! <span>🏁</span>
-            </h2>
-            <p class="text-sm md:text-lg mt-1 font-bold opacity-90">כל הכבוד על ההתמדה, נתראה מחר 🫂</p>
-        </div>
-
         <!-- Header -->
         <header class="gradient-bg text-white rounded-2xl p-6 mb-8 card-shadow text-center">
-            <h1 class="text-3xl font-bold mb-2">מערכת למידה מרחוק - יום שני 📚</h1>
-            <p class="text-lg opacity-90 mb-2">16.03.2026 | כיתה י'3</p>
+            <h1 class="text-3xl font-bold mb-2">מערכת למידה מרחוק - יום שלישי 📚</h1>
+            <p class="text-lg opacity-90 mb-2">17.03.2026 | כיתה י'3</p>
             <div id="live-clock" class="text-xl font-mono font-semibold bg-black/20 inline-block px-4 py-1 rounded-full">--:--:--</div>
         </header>
 
         <!-- Tamara's Message -->
-        <div class="bg-white border-r-8 border-pink-500 p-6 mb-8 rounded-xl card-shadow opacity-75">
+        <div class="bg-white border-r-8 border-pink-500 p-6 mb-8 rounded-xl card-shadow">
             <h2 class="text-xl font-bold text-pink-700 mb-3 flex items-center gap-2">
-                <span>🩷</span> הודעה מהמורה
+                <span>🩷</span> יום שלישי מוצלח
             </h2>
             <div class="text-gray-800 space-y-3 leading-relaxed">
-                <p>המשך למידה מקוונת ופוריה. אנא שימו לב לקישורים המעודכנים והקפידו להיכנס בזמן להראות נוכחות. שמרו על עצמכם! 🫂</p>
+                <p>המשך למידה מקוונת. כרגע אין קישורים זמינים לזום/מיט, אנא המתינו לעדכון בווטסאפ או כאן במערכת.</p>
+                <p>שמרו על עצמכם! 🫂</p>
             </div>
         </div>
 
         <!-- Schedule -->
-        <div class="space-y-4 opacity-50 pointer-events-none grayscale">
+        <div class="space-y-4">
             <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <span>🕒</span> לוח שיעורים (הסתיים)
+                <span>🕒</span> לוח שיעורים להיום
             </h3>
 
-            <!-- שיעור 2 -->
-            <div class="lesson-card bg-white rounded-xl p-5 card-shadow border-r-4 border-gray-400">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="flex items-center gap-4 w-full text-gray-400">
-                        <div class="text-center bg-gray-50 p-3 rounded-lg min-w-[120px]">
-                            <span class="block text-xs font-bold uppercase">שיעור 2</span>
-                            <span class="text-lg font-bold">08:45-09:30</span>
-                        </div>
-                        <div class="flex-grow text-right">
-                            <h4 class="font-bold text-xl">חינוך</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- שיעור 3 -->
-            <div class="lesson-card bg-white rounded-xl p-5 card-shadow border-r-4 border-gray-400">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="flex items-center gap-4 w-full text-gray-400">
-                        <div class="text-center bg-gray-50 p-3 rounded-lg min-w-[120px]">
-                            <span class="block text-xs font-bold uppercase">שיעור 3</span>
-                            <span class="text-lg font-bold">09:45-10:30</span>
-                        </div>
-                        <div class="flex-grow text-right">
-                            <h4 class="font-bold text-xl">היסטוריה</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- שיעור 4 -->
-            <div class="lesson-card bg-white rounded-xl p-5 card-shadow border-r-4 border-gray-400">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="flex items-center gap-4 w-full text-gray-400">
-                        <div class="text-center bg-gray-50 p-3 rounded-lg min-w-[120px]">
-                            <span class="block text-xs font-bold uppercase">שיעור 4</span>
-                            <span class="text-lg font-bold">10:45-11:30</span>
-                        </div>
-                        <div class="flex-grow text-right">
-                            <h4 class="font-bold text-xl">אנגלית</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- שיעור 5 -->
-            <div class="lesson-card bg-white rounded-xl p-5 card-shadow border-r-4 border-gray-400">
+            <div class="lesson-card bg-white rounded-xl p-5 card-shadow border-r-4 border-orange-400">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="flex items-center gap-4 w-full text-gray-400">
-                        <div class="text-center bg-gray-50 p-3 rounded-lg min-w-[120px]">
-                            <span class="block text-xs font-bold uppercase">שיעור 5</span>
-                            <span class="text-lg font-bold">11:45-12:30</span>
+                    <div class="flex items-center gap-4 w-full">
+                        <div class="text-center bg-orange-50 p-3 rounded-lg min-w-[120px]">
+                            <span class="block text-xs text-orange-600 font-bold uppercase">שיעור 5</span>
+                            <span class="text-lg font-bold text-gray-800">11:45-12:30</span>
                         </div>
                         <div class="flex-grow text-right">
-                            <h4 class="font-bold text-xl">אנגלית</h4>
+                            <h4 class="font-bold text-xl text-gray-800">תעבורה</h4>
+                            <p class="text-gray-500 text-sm">אבי מלר</p>
+                            <p class="text-pink-600 text-xs mt-1 font-semibold">טרם התקבל קישור לשיעור</p>
                         </div>
                     </div>
+                    <button disabled class="w-full md:w-auto bg-gray-300 text-gray-500 px-6 py-2 rounded-lg font-bold text-sm cursor-not-allowed">ממתין לקישור</button>
+                </div>
+            </div>
+
+            <!-- שיעור 6 -->
+            <div class="lesson-card bg-white rounded-xl p-5 card-shadow border-r-4 border-green-400">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="flex items-center gap-4 w-full">
+                        <div class="text-center bg-green-50 p-3 rounded-lg min-w-[120px]">
+                            <span class="block text-xs text-green-600 font-bold uppercase">שיעור 6</span>
+                            <span class="text-lg font-bold text-gray-800">12:45-13:30</span>
+                        </div>
+                        <div class="flex-grow text-right">
+                            <h4 class="font-bold text-xl text-gray-800">מד"ט</h4>
+                            <p class="text-gray-500 text-sm">יגאל</p>
+                            <p class="text-pink-600 text-xs mt-1 font-semibold">טרם התקבל קישור לשיעור</p>
+                        </div>
+                    </div>
+                    <button disabled class="w-full md:w-auto bg-gray-300 text-gray-500 px-6 py-2 rounded-lg font-bold text-sm cursor-not-allowed">ממתין לקישור</button>
                 </div>
             </div>
         </div>
@@ -160,8 +130,8 @@
             <div class="bg-white p-5 rounded-xl card-shadow text-center flex flex-col justify-center py-8">
                 <p class="text-gray-500 text-xs mb-1">מצב מערכת</p>
                 <div class="flex items-center justify-center gap-2">
-                    <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                    <span class="text-red-700 font-bold text-sm">המערכת סגורה - סוף יום</span>
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+                    <span class="text-yellow-700 font-bold text-sm">ממתין לעדכון קישורי זום</span>
                 </div>
             </div>
         </div>
@@ -200,4 +170,3 @@
     </script>
 </body>
 </html>
-
